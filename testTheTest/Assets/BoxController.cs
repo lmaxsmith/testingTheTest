@@ -1,18 +1,26 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class BoxController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public MeshRenderer _boxRenderer;
+    public TextMeshProUGUI _textRenderer;
+    public ColorSO startingColor;
+
+    public void Start()
     {
-        
+        SetColor(startingColor);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetColor(ColorSO colorSo)
     {
-        
+        _boxRenderer.material.color = colorSo.color;
+        _textRenderer.faceColor = colorSo.color;
+
+        _textRenderer.text = $"The color is {colorSo.colorName}!";
     }
+    
 }
