@@ -18,11 +18,11 @@ public class ButtonBuilder : MonoBehaviour
 		
 		foreach (var color in colorsToButton)
 		{
-			ColorButton button = Instantiate(buttonPrefab, transform).GetComponent<ColorButton>();
-			button.transform.localPosition += new Vector3(0, buttonHeight, 0);
-			button.colorSO = color;
+			CustomButtonController buttonController = Instantiate(buttonPrefab, transform).GetComponent<CustomButtonController>();
+			buttonController.transform.localPosition += new Vector3(0, buttonHeight, 0);
+			buttonController.colorSO = color;
 			
-			TextMeshProUGUI buttonText = button.GetComponentInChildren<TextMeshProUGUI>();
+			TextMeshProUGUI buttonText = buttonController.GetComponentInChildren<TextMeshProUGUI>();
 			buttonText.faceColor = color.color;
 			
 			buttonHeight += 30;

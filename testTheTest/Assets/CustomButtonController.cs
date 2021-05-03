@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ColorButton : MonoBehaviour
+public class CustomButtonController : MonoBehaviour
 {
     public ColorSO colorSO;
     private BoxController _boxController;
-    
+
     public void ButtonPushedHandler()
     {
         if (_boxController == null)
@@ -21,9 +21,4 @@ public class ColorButton : MonoBehaviour
         _boxController = FindObjectOfType<BoxController>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
