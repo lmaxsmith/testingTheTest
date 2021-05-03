@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 116139437}
   - component: {fileID: 116139436}
   - component: {fileID: 116139435}
+  - component: {fileID: 116139438}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -271,6 +272,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116139433}
   m_CullTransparentMesh: 1
+--- !u!114 &116139438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116139433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426d83fdbe791ca4ea432b01373fd368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EventChannel: {fileID: 11400000, guid: 425582c5c5e28ec46bf75fd22f186ed6, type: 2}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 116139435}
+        m_TargetAssemblyTypeName: ClickCounter, Assembly-CSharp
+        m_MethodName: CountUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &397128430
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,9 +903,6 @@ MonoBehaviour:
   _boxRenderer: {fileID: 397128431}
   _textRenderer: {fileID: 649498057}
   startingColor: {fileID: 11400000, guid: c126f3b3f5fc63343a23f2bfba43325a, type: 2}
-  ColorChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &1540934886
 Transform:
   m_ObjectHideFlags: 0

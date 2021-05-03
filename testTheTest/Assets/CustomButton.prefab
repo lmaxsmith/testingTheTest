@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 1583961511287590769}
   - component: {fileID: 9124768698624342933}
   m_Layer: 5
-  m_Name: Button
+  m_Name: CustomButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,3 +281,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorSO: {fileID: 0}
+  buttonClickedChannel: {fileID: 11400000, guid: 425582c5c5e28ec46bf75fd22f186ed6, type: 2}

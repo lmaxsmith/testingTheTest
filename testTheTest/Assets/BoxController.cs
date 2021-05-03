@@ -10,8 +10,6 @@ public class BoxController : MonoBehaviour
     public MeshRenderer _boxRenderer;
     public TextMeshProUGUI _textRenderer;
     public ColorSO startingColor;
-
-    public UnityEvent ColorChangedEvent = new UnityEvent();
     
     public void Start()
     {
@@ -24,8 +22,6 @@ public class BoxController : MonoBehaviour
         _textRenderer.faceColor = colorSo.color;
 
         _textRenderer.text = $"The color is {colorSo.colorName}!";
-        
-        ColorChangedEvent.Invoke();
     }
     
 }

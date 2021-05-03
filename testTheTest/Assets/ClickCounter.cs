@@ -9,13 +9,8 @@ public class ClickCounter : MonoBehaviour
 
     public TextMeshProUGUI textMesh;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        FindObjectOfType<BoxController>().ColorChangedEvent.AddListener(CountUp);
-    }
     
-    private void CountUp()
+    public void CountUp()
     {
         current++;
         textMesh.text = $"You've clicked the clicks {current} times.";
